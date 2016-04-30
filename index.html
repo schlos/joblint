@@ -1,41 +1,41 @@
 ---
 title: Joblint
-description: Test tech job posts for issues with sexism, culture, expectations, and recruiter fails.
+description: Provjera oglasa za posao - seksizam, kultura, očekivanja i početnički problemi
 layout: page
 ---
 
 <div class="column input-area">
-    <label class="visually-hidden" for="post-input">Paste or write your job post here</label>
-    <textarea id="post-input" class="post-input" data-control="postInput" placeholder="Paste or write your job post here"></textarea>
+    <label class="visually-hidden" for="post-input">Zaljepite vaš tekst oglasa ovdje</label>
+    <textarea id="post-input" class="post-input" data-control="postInput" placeholder="Zaljepite vaš tekst oglasa ovdje"></textarea>
 </div>
 
 <div class="column output-area">
 
     <div class="output-tally">
-        <h2>Issue Tally</h2>
+        <h2>Ocjena problema</h2>
         <ul class="count-chart" data-control="countOutput">
             <li class="count" data-role="count" data-type="culture">
-                <span class="bar-label">Culture</span>
+                <span class="bar-label">Kultura</span>
                 <span class="bar" data-role="bar">&#8203;</span>
                 <span class="number" data-role="number">0</span>
             </li>
             <li class="count" data-role="count" data-type="realism">
-                <span class="bar-label">Realism</span>
+                <span class="bar-label">Realizam</span>
                 <span class="bar" data-role="bar">&#8203;</span>
                 <span class="number" data-role="number">0</span>
             </li>
             <li class="count" data-role="count" data-type="recruiter">
-                <span class="bar-label">Recruiter</span>
+                <span class="bar-label">Početnici</span>
                 <span class="bar" data-role="bar">&#8203;</span>
                 <span class="number" data-role="number">0</span>
             </li>
             <li class="count" data-role="count" data-type="sexism">
-                <span class="bar-label">Sexism</span>
+                <span class="bar-label">Seksizam</span>
                 <span class="bar" data-role="bar">&#8203;</span>
                 <span class="number" data-role="number">0</span>
             </li>
             <li class="count" data-role="count" data-type="tech">
-                <span class="bar-label">Tech</span>
+                <span class="bar-label">Tehnički izrazi</span>
                 <span class="bar" data-role="bar">&#8203;</span>
                 <span class="number" data-role="number">0</span>
             </li>
@@ -45,7 +45,7 @@ layout: page
     <div class="output-issues">
         <h2>Issues</h2>
         <div data-control="issuesOutput">
-            <p class="no-issues">No issues found!</p>
+            <p class="no-issues">Nisu pronađeni problemi!</p>
             <script type="text/x-template" data-template="issues">
 
                 {#issues.length}
@@ -57,7 +57,7 @@ layout: page
                 {/issues.length}
 
                 {^issues.length}
-                    <p class="no-issues">No issues found!</p>
+                    <p class="no-issues">Nisu pronađeni problemi!</p>
                 {/issues.length}
 
             </script>
